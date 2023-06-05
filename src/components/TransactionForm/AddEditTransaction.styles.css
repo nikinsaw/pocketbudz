@@ -1,0 +1,111 @@
+.add-button {
+  background-color: #eee;
+  border: none;
+  border-radius: 100px;
+  color: #333;
+  cursor: pointer;
+  font-size: 1.2rem;
+  height: 3em;
+  outline: none;
+  width: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 1em;
+  right: 1em;
+}
+
+.add-button:hover {
+  background-color: #ddd;
+  transition: all 0.2s ease-in;
+}
+
+.add-button:active {
+  background-color: #ccc;
+  transition: all 0.2s ease-in;
+}
+
+.transaction-detail__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.transaction-detail__content {
+  display: flex;
+  background-color: #eee8;
+  padding: 2em;
+  max-width: 100%;
+  flex-direction: column;
+}
+.transaction-detail__form__header {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.transaction-detail__transaction-type {
+  display: flex;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: #ffd58066;
+  color: #333;
+  padding: 0.7em 1em;
+}
+
+.expense {
+  color: #d0312d;
+  background-color: #d0312d11;
+}
+
+.income {
+  color: #03ac13;
+  background-color: #03ac1311;
+}
+
+.transfer {
+  color: #888;
+  background-color: #aaa1;
+}
+
+.transaction-detail__transaction-type:hover {
+  transition: all 0.2s ease-in;
+}
+
+.transaction-detail__transaction-type:focus {
+  color: #fff;
+}
+
+.expense:focus {
+  background-color: #d0312d;
+}
+
+.income:focus {
+  background-color: #03ac13;
+}
+
+.transfer:focus {
+  background-color: #888;
+}
+
+.transaction-detail__form-submit {
+  display: flex;
+  background-color: orange;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 0.8em 1.3em;
+  justify-content: center;
+  margin-top: 1em;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.transaction-detail__field-input-options {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  border-radius: 10px;
+  flex: 1;
+  background-color: #d4740033;
+}

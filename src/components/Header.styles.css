@@ -1,0 +1,97 @@
+.header {
+  background-color: orange;
+  color: #fff;
+  padding: 0.3em 0.4em;
+  margin: 0;
+  line-height: 2.2rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.header span {
+  font-size: 0.4em;
+  font-weight: 300;
+}
+
+.header__menu-bar {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+}
+.header__menu-bar-list,
+.header__menu-income-and-expense {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  align-items: center;
+  text-align: center;
+}
+.header__menu-bar-list-item,
+.header__menu-income-and-expense-item {
+  padding: 0.5em 1.2rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: orange;
+}
+.header__menu-bar-list-item-active {
+  padding: 0.5em 1.2rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  border-bottom: 3px solid orange;
+  color: white;
+}
+.header__menu-icon {
+  display: none;
+}
+.header__menu-drawer {
+  transition: all 0.3s ease-in;
+}
+.header__selected-menu-drawer-item {
+  display: none;
+}
+@media screen and (max-width: 480px) {
+  .header {
+    padding: 1.2rem;
+    align-items: start;
+  }
+  .header span {
+    font-size: 0.4em;
+  }
+  .header__menu-bar {
+    display: none;
+  }
+  .header__menu-icon {
+    display: block;
+    font-size: 2.5rem;
+    float: right;
+    margin-right: 0.3em;
+    color: #fff;
+    margin-top: -2em;
+  }
+  .header__menu-drawer {
+    width: 100%;
+    color: orange;
+    background-color: #333;
+    z-index: 1;
+    transform: translateY(0%);
+  }
+  .header__menu-drawer-list-item {
+    padding: 0.5em 1.2rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    border-bottom: 1px solid #fff;
+  }
+  .header__selected-menu-drawer-item {
+    background-color: #333;
+    color: orange;
+    padding: 0.5em;
+    font-size: 1.2rem;
+    font-weight: 400;
+    border-bottom: 3px solid orange;
+  }
+}

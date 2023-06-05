@@ -1,0 +1,13 @@
+.rbc-event {
+  background-color: transparent !important;
+  font-weight: 400;
+  justify-content: center;
+  border: none;
+  text-align: right;
+}
+
+.rbc-event-label {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #333;
+}

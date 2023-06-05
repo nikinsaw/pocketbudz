@@ -1,0 +1,42 @@
+.formField {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+  align-items: center;
+}
+
+.formField__label {
+  flex: 1;
+  font-size: 1rem;
+  margin-bottom: 0.5em;
+  color: #333;
+}
+
+.formField__input {
+  flex: 5;
+  border: none;
+  border-bottom: 2px solid #ffd58044;
+  font-size: 1rem;
+  padding: 0.6em;
+  color: #333;
+  background-color: transparent;
+}
+
+.formField__input:focus {
+  outline: none;
+  border-color: orange;
+}
+
+.fromField__indicator {
+  position: relative;
+  left: 12px;
+}
+
+.fromField__spacer {
+  width: 32px;
+  height: 32px;
+}
+
+.formField__input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}

@@ -1,0 +1,17 @@
+.main-content__container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 1em;
+}
+
+@media screen and (max-aspect-ratio: 3/2) {
+  .main-content__container {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+@media screen and (max-aspect-ratio: 9/16) {
+  .main-content__container {
+    grid-template-columns: 1fr;
+  }
+}
